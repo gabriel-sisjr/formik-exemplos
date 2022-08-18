@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ExemploForm from "./Components/Forms/ExemploForm";
+import ExemploForm2 from "./Components/Forms/ExemploForm2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Hello World</h1>
+
+      <h1>Form 1</h1>
+      <ExemploForm email="" firstName="" lastName="" />
+
+      <h1>Form 2</h1>
+      <ExemploForm2 email="" firstName="" lastName="" />
+    </>
   );
 }
 
